@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Proiect_final_app.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Proiect_final_app"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+        <ShellContent
+     Title="Hello,user!"
+    ContentTemplate="{DataTemplate local:MainPage}"
+    />
+        <ShellContent
+    Title="About"
+     ContentTemplate="{DataTemplate local:AboutPage1}"
+    />
+        <ShellContent
+    Title="ToDo"
+     ContentTemplate="{DataTemplate local:ToDo}"
+    />
+        <ShellContent
+     Title="My ToDo Lists"
+     ContentTemplate="{DataTemplate local:ListPage}"
+     />
+    </TabBar>
+
+</Shell>
